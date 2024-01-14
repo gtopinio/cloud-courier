@@ -1,3 +1,15 @@
 <!-- App Component HTML -->
-<div>App Works!</div>
+<section>
+  <div class="flex flex-col w-full justify-center items-center mt-5">
+    <h1>
+      <span class="font-bold text-4xl">
+        File Upload Demo
+      </span>
+    </h1>
+    <div class="flex flex-col justify-center items-center mt-5">
+      <input class="ml-24" #fileInput type="file" multiple (change)="handleFileSelect(fileInput)"/>
+      <button class="mt-6 bg-gray-400 p-2 rounded-2xl" (click)="uploadFiles()">Upload</button>
+    </div>
+  </div>
+</section>
 <!-- End of App Component HTML -->
